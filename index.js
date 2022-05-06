@@ -4,7 +4,7 @@ alert ('Esta funcionando');
 
 var edad = 19;
 
-if ((edad>=18)||(edad>60)) {
+if ((edad>=18)||(edad>=60)) {
     console.log('me compraron un helado de chocochips');
 }else{
     console.log('no me compraron helado de chocochips');
@@ -20,13 +20,17 @@ if ((perro = true)&&(gato = true)) {  // hay que poner false en una de las dos v
     console.log('estoy triste');
 }
 
-var numero_inicial = 1
+var numero_inicial = 1;
 
 function contador_de_numeros_hasta_el_100(numero_inicial) {
-    while (numero_inicial<100) {
-       console.log(numero_inicial); 
+    while (numero_inicial<=100) {
+    if (numero_inicial%3==1) {
+
+        console.log(numero_inicial);
+    } 
+    numero_inicial = numero_inicial+3; 
+
     }
-    numero_inicial = numero_inicial+3;
 }
 
 contador_de_numeros_hasta_el_100(numero_inicial);
